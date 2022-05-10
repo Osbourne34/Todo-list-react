@@ -1,0 +1,95 @@
+@import './../../assets/styles/variables.scss';
+
+.task {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    & + & {
+        margin-top: 20px;
+    }
+
+    &__left,
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &__left {
+        margin-right: 25px;
+        flex-grow: 1;
+    }
+    &__toggler-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 20px;
+        height: 20px;
+        border: 2px solid $colorGray;
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        .icon-check {
+            font-size: 11px;
+            opacity: 0;
+
+            transition: .2s;
+        }
+        &:hover {
+            background-color: $colorGray;
+            .icon-check {
+                opacity: 1;
+                color: $colorDarkGray;
+            }
+        }
+    }
+    &__checkbox {
+        appearance: none;
+        position: absolute;
+        &:checked ~ .task__label .task__toggler-btn {
+            background-color: $colorGreen;
+            border-color: $colorGreen;
+            .icon-check {
+                color: #fff;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__text {
+        width: 100%;
+        margin-left: 10px;
+        border-bottom: 1px solid transparent;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &_completed {
+            text-decoration: line-through;
+        }
+
+        &:focus {
+            border-bottom: 1px solid $colorGray;
+        }
+    }
+
+    &__edit-btn,
+    &__remove-btn {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        color: $colorGray;
+
+        transition: .2s;
+        &:hover {
+            color: $colorText;
+        }
+    }
+    &__edit-btn {
+        margin-right: 10px;
+    }
+    &__remove-btn {
+        transform: translateY(-1px);
+    }
+}

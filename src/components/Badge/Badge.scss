@@ -1,0 +1,20 @@
+@import './../../assets/styles/variables.scss';
+
+.badge {
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    &_small {
+        width: 10px;
+        height: 10px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    &_large {
+        width: 20px;
+        height: 20px;
+    }
+    &_active {
+        border: 2px solid $colorDarkGray;
+    }
+}

@@ -1,0 +1,53 @@
+@import './../../assets/styles/variables.scss';
+
+.sidebar {
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+
+    padding: 60px 20px;
+
+    background-color: #F4F6F6;
+    border-right: 1px solid $colorGray;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+}
+
+.folder-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &__item {
+        position: relative;
+        border-radius: 5px;
+        &:hover {
+            background-color: #fff;
+            transition: .2s;
+            .folder-list__remove-btn {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    }
+    &__remove-btn {
+        pointer-events: none;
+        opacity: 0;
+
+        width: 20px;
+        height: 20px;
+        font-size: 18px;
+        color: $colorGray;
+
+        position: absolute;
+        top: calc(50% - 1px);
+        right: 10px;
+        transform: translateY(-50%);
+
+        transition: .2s;
+        &:hover {
+            color: $colorText;
+        }
+    }
+}

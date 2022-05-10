@@ -1,0 +1,133 @@
+{
+  "folders": [
+    {
+      "title": "Frontend",
+      "colorId": 3,
+      "id": 1
+    },
+    {
+      "title": "Backend",
+      "colorId": 6,
+      "id": 2
+    },
+    {
+      "title": "Fullstack",
+      "colorId": 8,
+      "id": 3
+    },
+    {
+      "title": "Спорт",
+      "colorId": 7,
+      "id": 4
+    },
+    {
+      "title": "Работа",
+      "colorId": 2,
+      "id": 5
+    }
+  ],
+  "tasks": [
+    {
+      "task": "React JS",
+      "completed": true,
+      "folderId": 1,
+      "id": 1
+    },
+    {
+      "task": "Angular",
+      "completed": false,
+      "folderId": 1,
+      "id": 2
+    },
+    {
+      "task": "Vue JS",
+      "completed": false,
+      "folderId": 1,
+      "id": 3
+    },
+    {
+      "task": "Express js",
+      "completed": false,
+      "folderId": 2,
+      "id": 4
+    },
+    {
+      "task": "Node js",
+      "completed": false,
+      "folderId": 2,
+      "id": 5
+    },
+    {
+      "task": "PHP",
+      "completed": false,
+      "folderId": 2,
+      "id": 6
+    },
+    {
+      "task": "MERN",
+      "completed": false,
+      "folderId": 3,
+      "id": 7
+    },
+    {
+      "task": "Сходить в зал",
+      "completed": false,
+      "folderId": 4,
+      "id": 8
+    },
+    {
+      "task": "Пробежка",
+      "completed": false,
+      "folderId": 4,
+      "id": 9
+    },
+    {
+      "task": "asdasd",
+      "completed": false,
+      "folderId": 4,
+      "id": 10
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "hex": "#C9D1D3",
+      "name": "grey"
+    },
+    {
+      "id": 2,
+      "hex": "#42B883",
+      "name": "green"
+    },
+    {
+      "id": 3,
+      "hex": "#64C4ED",
+      "name": "blue"
+    },
+    {
+      "id": 4,
+      "hex": "#FFBBCC",
+      "name": "pink"
+    },
+    {
+      "id": 5,
+      "hex": "#B6E6BD",
+      "name": "lime"
+    },
+    {
+      "id": 6,
+      "hex": "#C355F5",
+      "name": "purple"
+    },
+    {
+      "id": 7,
+      "hex": "#110133",
+      "name": "black"
+    },
+    {
+      "id": 8,
+      "hex": "#FF6464",
+      "name": "red"
+    }
+  ]
+}

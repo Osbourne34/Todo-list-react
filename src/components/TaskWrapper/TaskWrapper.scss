@@ -1,0 +1,35 @@
+@import './../../assets/styles/variables.scss';
+
+.task-wrapper {
+    & + & {
+        margin-top: 25px;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $colorGray;
+        input {
+            width: 100%;
+            font-size: 32px;
+            font-weight: 700;
+            &:focus {
+                background-color: #fff5e9;
+            }
+        }
+        .icon-edit {
+            margin-top: 10px;
+            margin-left: 20px;
+            font-size: 24px;
+            color: $colorGray;
+            transition: .2s;
+            &:hover {
+                color: $colorText;
+            }
+        }
+    }
+}

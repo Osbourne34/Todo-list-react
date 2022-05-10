@@ -1,0 +1,17 @@
+.todo {
+    max-width: 1000px;
+    width: calc(100% - 60px);
+    height: calc(100vh - 60px);
+    margin: 30px auto;
+
+    display: flex;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+
+    @media (max-width: 768px) {
+        height: 100%;
+        flex-direction: column;
+    }
+}
+

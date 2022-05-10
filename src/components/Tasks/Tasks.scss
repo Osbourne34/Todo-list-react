@@ -1,0 +1,11 @@
+@import './../../assets/styles/variables.scss';
+
+.tasks {
+    padding: 60px;
+    flex-grow: 1;
+    overflow: auto;
+
+    @media (max-width: 768px) {
+        padding: 60px 20px;
+    }
+}

@@ -1,0 +1,66 @@
+@import './../../assets/styles/variables.scss';
+
+.add-folder {
+    position: relative;
+
+    & .badge {
+        cursor: pointer;  
+    }
+
+    &__toggler {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 11px 12px;
+
+        color: $colorDarkGray;
+
+        transition: .2s;
+        .icon-plus1 {
+            margin-top: 2px;
+            margin-left: 2px;
+            margin-right: 11px;
+        }
+        &:hover,
+        &_active {
+            color: $colorText;
+        }
+    }
+    &__window {
+        position: absolute;
+        top: 100%;
+        left: 10px;
+
+        width: 250px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    &__colors {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    &__add-btn {
+        width: 100%;
+    }
+    &__close-btn {
+        position: absolute;
+        top: -9px;
+        right: -9px;
+
+        width: 25px;
+        height: 25px;
+        background-color: $colorText;
+        border-radius: 50%;
+        .icon-close {
+            font-size: 14px;
+            color: #fff;
+            transform: translateY(-1px);
+        }
+    }
+}

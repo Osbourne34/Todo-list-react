@@ -1,0 +1,24 @@
+.folder {
+    display: flex;
+    align-items: center;
+
+    padding: 10px 12px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .2s;
+    &_active {
+        background-color: #fff;
+    }
+    &:hover {
+        background-color: #fff;
+    }
+    &__title {
+        margin-left: 10px;
+        padding-right: 15px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

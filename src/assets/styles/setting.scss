@@ -1,0 +1,65 @@
+@import './variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button, input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: $colorText;
+}
+
+.field {
+    width: 100%;
+    padding: 7px 12px;
+    border: 1px solid $colorGray;
+    border-radius: 5px;
+    &:focus {
+        border-color: $colorDarkGray;
+    }
+}
+
+.button {
+    padding: 8px 12px;
+    background-color: $colorGreen;
+    border-radius: 5px;
+
+    color: #fff;
+    &:hover,
+    &:focus {
+        background-color: darken($colorGreen, 5);
+    }
+    &:active {
+        background-color: darken($colorGreen, 10);
+    }
+    &:disabled {
+        background-color: lighten($colorGreen, 10);
+    }
+}
