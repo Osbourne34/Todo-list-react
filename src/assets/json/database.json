@@ -35,7 +35,7 @@
     },
     {
       "task": "Angular",
-      "completed": false,
+      "completed": true,
       "folderId": 1,
       "id": 2
     },
@@ -47,7 +47,7 @@
     },
     {
       "task": "Express js",
-      "completed": false,
+      "completed": true,
       "folderId": 2,
       "id": 4
     },
