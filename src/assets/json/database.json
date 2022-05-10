@@ -53,7 +53,7 @@
     },
     {
       "task": "Node js",
-      "completed": false,
+      "completed": true,
       "folderId": 2,
       "id": 5
     },
